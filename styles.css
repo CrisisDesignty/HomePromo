@@ -5,7 +5,7 @@
 /* Grays */
 /* white and black */
 html {
-  font-size: 100%;
+  font-size: 1.6rem;
   box-sizing: border-box;
 }
 
@@ -20,6 +20,74 @@ body {
   padding: 0;
   background: rgba(185, 158, 229, 0.6);
   backdrop-filter: blur(37px);
+}
+
+.nav {
+  background: linear-gradient(90deg, #7D47D5 5.97%, #A380DC 96.22%);
+  border-radius: 0 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  height: 6rem;
+  margin: 0;
+}
+.nav__logo-container {
+  margin-top: 1.4rem;
+  margin-left: 2rem;
+  top: 1.4rem;
+  left: 2rem;
+}
+.nav__logo {
+  width: 4rem;
+}
+.nav__search-container {
+  margin-right: 3rem;
+  margin-top: 1.6rem;
+}
+.nav__search-container > input {
+  border: solid 0;
+  border-radius: 2rem;
+  color: #021400;
+  display: block;
+  padding: 0 3.6rem 0 3.6rem;
+  font-size: 1.6rem;
+  height: 3rem;
+  width: 25rem;
+}
+
+#icon-search {
+  width: 2rem;
+  position: absolute;
+  top: 2.2rem;
+  margin-left: 1rem;
+}
+
+#icon-heart {
+  width: 2.4rem;
+  position: absolute;
+  top: 2.2rem;
+  right: 4rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: #719ECE;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #719ECE;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+.login__header-container {
+  display: flex;
+  justify-content: center;
+}
+.login__header-1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #7D47D5;
 }
 
 /*# sourceMappingURL=styles.css.map */
