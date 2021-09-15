@@ -1,0 +1,59 @@
+.nav {
+    background: linear-gradient(90deg, #7D47D5 5.97%, #A380DC 96.22%);
+    border-radius: 0 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    margin: 0;
+
+    &__logo-container {
+        margin-top: 1.4rem;
+        margin-left: 2rem;
+        top: 1.4rem;
+        left: 2rem;
+    }    
+    &__logo {
+        width: 4rem;
+    }
+    &__search-container {
+        margin-right: 3rem;
+        margin-top: 1.6rem;
+
+        & > input {
+            border: solid 0;
+            border-radius: 2rem;
+            color: $black;
+            display: block;
+            padding: 0 3.6rem 0 3.6rem;
+
+            font-size: 1.6rem; 
+            height: 3rem;
+            width: 25rem;
+        }
+    }
+
+}
+#icon-search {
+    width: 2rem;
+    position: absolute;
+    top: 2.2rem;
+    margin-left: 1rem;
+}
+#icon-heart {
+    width: 2.4rem;
+    position: absolute;
+    top: 2.2rem;
+    right: 4rem;
+}
+
+input:focus { 
+    outline: none ;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+textarea:focus { 
+    outline: none ;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
