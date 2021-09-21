@@ -1,4 +1,8 @@
 .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 
     &__header-container {        
         display: flex;
@@ -10,4 +14,29 @@
         font-weight: 700;
         color: $main-color;
     }
+    &__input-main {
+        width: 25rem;
+        height: 3rem;
+        border-radius: 10px;
+        border: 0;
+        font-size: 1.4rem;
+        margin: 1rem 0 1rem 0;
+        padding: 0 0 0 1rem;
+    }
+    &__button-main {
+        background-color: $main-color;
+        border: 0;
+        border-radius: 1.4rem;
+        color: $white;
+        font-size: 1.6rem;
+        font-weight: 700;
+        height: 3.4rem;
+        margin: 1rem 0 1.6rem 0;
+        text-decoration: none;
+        width: 14rem;
+    }
+}
+
+.icons__container {
+    display: flex;
 }

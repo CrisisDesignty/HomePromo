@@ -16,3 +16,16 @@ body {
     background: rgba(185, 158, 229, 0.6);
     backdrop-filter: blur(37px);
 }
+
+
+input:focus { 
+    outline: none ;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+textarea:focus { 
+    outline: none ;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
