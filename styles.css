@@ -22,6 +22,33 @@ body {
   backdrop-filter: blur(37px);
 }
 
+input:focus {
+  outline: none;
+  border-color: #719ECE;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #719ECE;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+.icon__google > img {
+  width: 3rem;
+  margin: 1rem;
+}
+
+.icon__fb > img {
+  width: 3rem;
+  margin: 1rem;
+}
+
+.icon__tw > img {
+  width: 3rem;
+  margin: 1rem;
+}
+
 .nav {
   background: linear-gradient(90deg, #7D47D5 5.97%, #A380DC 96.22%);
   border-radius: 0 0 2rem;
@@ -68,18 +95,11 @@ body {
   right: 4rem;
 }
 
-input:focus {
-  outline: none;
-  border-color: #719ECE;
-  box-shadow: 0 0 10px #719ECE;
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-textarea:focus {
-  outline: none;
-  border-color: #719ECE;
-  box-shadow: 0 0 10px #719ECE;
-}
-
 .login__header-container {
   display: flex;
   justify-content: center;
@@ -88,6 +108,31 @@ textarea:focus {
   font-size: 2.8rem;
   font-weight: 700;
   color: #7D47D5;
+}
+.login__input-main {
+  width: 25rem;
+  height: 3rem;
+  border-radius: 10px;
+  border: 0;
+  font-size: 1.4rem;
+  margin: 1rem 0 1rem 0;
+  padding: 0 0 0 1rem;
+}
+.login__button-main {
+  background-color: #7D47D5;
+  border: 0;
+  border-radius: 1.4rem;
+  color: #ECFFEB;
+  font-size: 1.6rem;
+  font-weight: 700;
+  height: 3.4rem;
+  margin: 1rem 0 1.6rem 0;
+  text-decoration: none;
+  width: 14rem;
+}
+
+.icons__container {
+  display: flex;
 }
 
 /*# sourceMappingURL=styles.css.map */
