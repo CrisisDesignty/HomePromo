@@ -19,7 +19,6 @@ body {
   margin: 0;
   padding: 0;
   background: rgba(185, 158, 229, 0.6);
-  backdrop-filter: blur(37px);
 }
 
 input:focus {
@@ -32,6 +31,98 @@ textarea:focus {
   outline: none;
   border-color: #719ECE;
   box-shadow: 0 0 10px #719ECE;
+}
+
+.input__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input__container-number {
+  display: inline-block;
+  flex-direction: row;
+}
+.input__container-terms {
+  display: flex;
+  margin-top: 1.8rem;
+  width: 30rem;
+}
+.input__container-terms > figure > img {
+  width: 1.6rem;
+}
+.input__container-terms > p {
+  color: #ECFFEB;
+  font-size: 1.4rem;
+}
+.input__container-terms > p > a {
+  text-decoration: underline;
+  color: #F2EC4E;
+}
+
+.input-main {
+  width: 25rem;
+  height: 3rem;
+  border-radius: 10px;
+  border: 0;
+  font-size: 1.4rem;
+  margin: 1rem 0rem 0;
+  padding: 0 0 0 1rem;
+}
+
+.input-number {
+  width: 25rem;
+  height: 3rem;
+  border-radius: 10px;
+  border: 0;
+  font-size: 1.4rem;
+  margin: 1rem 0rem 0;
+  padding: 0 0 0 7.5rem;
+}
+.input-number ~ img {
+  left: 7.5rem;
+  position: absolute;
+  margin-top: 1.3rem;
+  width: 2rem;
+}
+.input-number ~ span {
+  position: absolute;
+  margin-top: 1.6rem;
+  left: 10.5rem;
+  font-size: 1.4rem;
+}
+
+.vl {
+  position: absolute;
+  left: 10rem;
+  margin-top: -2.5rem;
+  border-left: 2px solid #381275;
+  height: 2rem;
+}
+
+.button-main {
+  background-color: #7D47D5;
+  border: 0;
+  border-radius: 1.4rem;
+  color: #ECFFEB;
+  font-size: 1.6rem;
+  font-weight: 700;
+  height: 3.4rem;
+  margin: 1rem 0 1.6rem 0;
+  text-decoration: none;
+  width: 14rem;
+}
+
+.button-submit {
+  background-color: #F2EC4E;
+  border: 0;
+  border-radius: 1.4rem;
+  color: #A27CE1;
+  font-size: 1.6rem;
+  font-weight: 700;
+  height: 3.4rem;
+  margin: 1rem 0 1.6rem 0;
+  text-decoration: none;
+  width: 14rem;
 }
 
 .icon__google > img {
@@ -56,6 +147,8 @@ textarea:focus {
   justify-content: space-between;
   height: 6rem;
   margin: 0;
+  min-width: 288px;
+  max-width: 1024px;
 }
 .nav__logo-container {
   margin-top: 1.4rem;
@@ -99,6 +192,8 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 288px;
+  max-width: 980px;
 }
 .login__header-container {
   display: flex;
@@ -109,30 +204,22 @@ textarea:focus {
   font-weight: 700;
   color: #7D47D5;
 }
-.login__input-main {
-  width: 25rem;
-  height: 3rem;
-  border-radius: 10px;
-  border: 0;
-  font-size: 1.4rem;
-  margin: 1rem 0 1rem 0;
-  padding: 0 0 0 1rem;
-}
-.login__button-main {
-  background-color: #7D47D5;
-  border: 0;
-  border-radius: 1.4rem;
-  color: #ECFFEB;
-  font-size: 1.6rem;
-  font-weight: 700;
-  height: 3.4rem;
-  margin: 1rem 0 1.6rem 0;
-  text-decoration: none;
-  width: 14rem;
-}
 
 .icons__container {
   display: flex;
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 288px;
+  max-width: 980px;
+}
+.signup__header-container > h1 {
+  color: #5220A5;
+  font-size: 2.4rem;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=styles.css.map */

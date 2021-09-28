@@ -25,9 +25,11 @@
                 <div class="login__header-container"> 
                     <h1 class="login__header-1">Login</h1>
                 </div>
-                <input class="login__input-main" placeholder="Name" type="text">
-                <input class="login__input-main" placeholder="Password" type="text">
-                <input class="login__button-main" value="Login" type="button">
+                <div class="input__container">
+                    <input class="input-main" placeholder="User or e-mail" type="text">
+                    <input class="input-main" placeholder="Password" type="text">
+                    <input class="button-main" value="Login" type="button">
+                </div>
                 <div class="icons__container">
                     <spam class="icon__google"><img src="/assets/icons/bx_bxl-google.svg" alt=""></spam>
                     <spam class="icon__fb"> <img src="assets/icons/bx_bxl-facebook-circle.svg" alt=""></spam>
@@ -37,11 +39,32 @@
 
             <form class="signup">
                 <div class="signup__header-container">
-                    <h1 class="signup__header-1">
-                        Sign up
-                    </h1>
-
+                    <h1>Sign up</h1>
                 </div>
+                <div class="input__container">
+                    <input class="input-main" placeholder="Name" type="text">
+                    <input class="input-main" placeholder="Last name" type="text">
+                    <input class="input-main" placeholder="e-mail" type="text">
+                    <input type="text" class="input-main" placeholder="Password (8-20 characters)">
+                    <input type="text" class="input-main" placeholder="Confirm password">
+
+                    <div class="input__container-number">
+                        <input type="number" class="input-number" placeholder="Phone">
+                        <img src="./assets/icons/twemoji_flag-for-flag-mexico.svg" alt="country-mexico" srcset="">
+                        <div class="vl"></div>
+                        <span>52+</span>
+                    </div>
+
+                    <div class="input__container-terms">
+                        <figure>
+                            <img  src="./assets/icons/check-radious-check.svg" alt="agree">
+                        </figure>
+                        <p>I read and agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></p>
+                    </div>
+
+                    <input class="button-submit" type="button" value="Submit"/>
+                </div>
+
             </form>
         </main> 
 

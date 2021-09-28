@@ -1,0 +1,73 @@
+.input__container {
+   display: flex; 
+   flex-direction: column;
+   align-items: center;
+
+   &-number {
+      display: inline-block;
+      flex-direction: row;
+   }
+  
+   &-terms {
+      display: flex;
+      margin-top: 1.8rem;
+      width: 30rem;
+      
+      &>figure>img {
+         width: 1.6rem;
+      }
+      
+      &>p {
+         color: $white;
+         font-size: 1.4rem;
+         &>a {
+            text-decoration: underline;
+            color: $secondary_color;
+         }
+      }
+
+   }
+}
+
+.input-main {
+   width: 25rem;
+   height: 3rem;
+   border-radius: 10px;
+   border: 0;
+   font-size: 1.4rem;
+   margin: 1rem 0rem 0;
+   padding: 0 0 0 1rem;
+}
+
+.input-number {
+   width: 25rem;
+   height: 3rem;
+   border-radius: 10px;
+   border: 0;
+   font-size: 1.4rem;
+   margin: 1rem 0rem 0;
+   padding: 0 0 0 7.5rem;
+
+   &~img {
+      left: 7.5rem;
+      position: absolute;
+      margin-top: 1.3rem;
+      width: 2rem;
+   }
+
+   &~span {
+      position: absolute;
+      margin-top: 1.6rem;
+      left: 10.5rem;
+      font-size: 1.4rem;
+   }
+   
+}
+
+.vl {
+   position: absolute;
+   left: 10rem;
+   margin-top: -2.5rem;
+   border-left: 2px solid $main_color-ultradark;
+   height: 2rem;
+}
